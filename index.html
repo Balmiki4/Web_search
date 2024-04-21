@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Search</title>
+    <!-- Include a professional font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Include a CSS file for styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Google Search</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Enter your search query..."
+          title="Real Time Search"
+          name="searchbox"
+        />
+        <button id="searchbtn">Search</button>
+      </div>
+
+      <!-- Search Results Section -->
+      <div class="search-results" id="web-content"></div>
+    </main>
+
+    <!-- Include JavaScript file -->
+    <!-- <script
+      src="https://www.google.com/jsapi?key=AIzaSyDmzZS6T8pgdF5jod7uARNGsVq1WP70fDA"
+      type="text/javascript"
+    ></script> -->
+
+    <script src="script.js"></script>
+    <script src="https://www.googleapis.com/customsearch/v1?key=AIzaSyDmzZS6T8pgdF5jod7uARNGsVq1WP70fDA&cx=47cb434d820dd4982&q=&callback=handleResponse"></script>
+  </body>
+</html>
